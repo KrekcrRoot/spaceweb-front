@@ -1,0 +1,65 @@
+
+@use 'src/variables';
+
+.embla__controll {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .embla__controll__counter {
+
+    .gray {
+      color: #8A8A8A;
+    }
+
+    span {
+      color: variables.$white;
+    }
+
+  }
+
+
+  .embla__controll__line {
+
+    width: 80%;
+    height: 2px;
+    background: variables.$white;
+
+  }
+
+  .embla__controll__btns {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .embla__controll__btn {
+
+    cursor: pointer;
+    
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #8A8A8A;
+    border-radius: 50%;
+    background: transparent;
+    transition: all 0.15s ease;
+
+    img {
+      user-select: none;
+    }
+
+  }
+
+  .embla__controll__active {
+    border: 2px solid variables.$white;
+    width: 100px;
+    border-radius: 9999px;
+  }
+
+}

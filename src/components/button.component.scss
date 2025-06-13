@@ -1,0 +1,51 @@
+@use 'src/variables';
+
+.button {
+  font-size: 2.25rem;
+  color: variables.$background;
+  border-radius: 99999px;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  //height: max-content;
+
+  transition: all 0.15s ease-out;
+
+  img {
+    transition: all 0.15s ease-in-out;
+  }
+
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.button__primary {
+  background: variables.$primary;
+
+  &:hover {
+    background: variables.$dark;
+    color: variables.$white;
+  }
+}
+
+.button__default {
+  background: variables.$white;
+
+  &:hover {
+    background: variables.$dark;
+    color: variables.$white;
+
+    img {
+      filter: invert(1);
+    }
+  }
+
+  &:active {
+    color: variables.$gray;
+  }
+}

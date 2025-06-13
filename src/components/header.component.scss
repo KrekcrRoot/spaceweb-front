@@ -1,0 +1,43 @@
+
+@use "src/variables";
+
+header {
+  width: 100%;
+  background: variables.$dark;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem 3rem;
+  border-radius: 9999px;
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  nav {
+    font-size: 20px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 3.5rem;
+      text-transform: uppercase;
+
+      li {
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+

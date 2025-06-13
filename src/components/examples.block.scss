@@ -1,0 +1,84 @@
+
+@use 'src/variables';
+
+.examples {
+
+  .examples__header {
+
+    .examples__header__title {
+
+      display: flex;
+      flex-direction: column;
+
+      .examples__header__title-top {
+
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        h1 {
+          font-size: 6rem;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+
+      }
+      .examples__header__title-bottom {
+
+        display: flex;
+        align-items: center;
+
+        h1 {
+          font-size: 6rem;
+          text-transform: uppercase;
+        }
+
+        .examples__header__title-bottom-abstract {
+          display: flex;
+          align-items: center;
+          margin-right: 1rem;
+        }
+
+        .abstract__circle {
+          height: 69px;
+          width: 69px;
+          border-radius: 50%;
+          background: variables.$primary;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          user-select: none;
+
+          img {
+            user-select: none;
+          }
+        }
+
+        .abstract__text {
+          text-transform: uppercase;
+          color: variables.$background;
+          background: variables.$primary;
+          font-size: 2.25rem;
+          font-weight: bold;
+
+          padding: 1rem 3.5rem;
+          border-radius: 15px;
+        }
+
+      }
+
+
+    }
+
+
+    .examples__header__btns {
+      align-self: flex-start;
+    }
+
+  }
+
+}
