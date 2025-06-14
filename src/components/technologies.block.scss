@@ -1,0 +1,30 @@
+
+
+.technologies__header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  max-width: 100%;
+  //align-items: flex-start;
+  //justify-content: start;
+
+  .technologies__header-top, .technologies__header-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 100%;
+
+    h1 {
+      text-transform: uppercase;
+      font-size: 6rem;
+    }
+
+    p {
+      font-size: 6rem;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+
+}

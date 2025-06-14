@@ -3,6 +3,7 @@ import React from 'react';
 import "./globals.scss";
 
 import { Montserrat } from 'next/font/google';
+import FooterComponent from '@/components/footer.component';
 
 const montserrat = Montserrat({
     subsets: ['cyrillic', 'latin']
@@ -24,6 +25,7 @@ export default function RootLayout({
         <div className={'app'}>
             {children}
         </div>
+        <FooterComponent />
       </body>
     </html>
   );

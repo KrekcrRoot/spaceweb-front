@@ -1,0 +1,119 @@
+
+@use 'src/variables';
+
+footer {
+
+  width: 100%;
+  height: 530px;
+
+  background: variables.$dark;
+  padding: 5rem;
+
+  .footer__container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+
+    .footer__info {
+
+      flex: 1;
+
+      h1 {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+    }
+
+    .footer__main {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .footer__main-top {
+        display: flex;
+        justify-content: space-between;
+
+        .footer__main__sections, .footer__main__contacts {
+
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            color: #9E9E9E;
+          }
+
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+
+            li {
+              a {
+                text-decoration: none;
+                color: variables.$white;
+                font-size: 1.25rem;
+              }
+            }
+          }
+
+        }
+
+        .footer__main__contacts {
+          text-align: right;
+
+          li {
+            text-decoration: none;
+            color: variables.$white;
+            font-size: 1.25rem;
+          }
+        }
+
+      }
+
+      .footer__main-bottom {
+        width: 100%;
+
+        .footer__main__up-btn {
+
+          cursor: pointer;
+
+          width: 100%;
+          border: 2px solid variables.$white;
+          background: transparent;
+          color: variables.$white;
+          border-radius: 25px;
+          font-size: 2rem;
+          font-weight: 200;
+          text-transform: uppercase;
+          padding: 1rem;
+          transition: all 0.15s ease;
+
+
+          &:hover {
+            background: variables.$primary;
+            border: 2px solid variables.$primary;
+            color: variables.$background;
+          }
+
+        }
+      }
+    }
+
+    .footer__tg {
+      flex: 1;
+    }
+
+  }
+
+}
+
